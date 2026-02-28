@@ -6,6 +6,13 @@ import ProfileChange from '../miao-plugin/apps/profile/ProfileChange.js'
 import { profileArtis } from '../miao-plugin/apps/profile/ProfileArtis.js'
 import { Common, Data, Cfg, Meta  } from '../miao-plugin/components/index.js'
 import { Weapon, Player, Character, ArtifactSet, Avatar } from '../miao-plugin/models/index.js'
+let defWeapon = {
+  bow: '西风猎弓',
+  catalyst: '西风秘典',
+  claymore: '西风大剑',
+  polearm: '西风长枪',
+  sword: '西风剑'
+}
 let req = async function (url, param = {}) {
   try {
     const controller = new AbortController()
@@ -462,3 +469,4 @@ ProfileDetail.detail = async (e) => {
   return true
 
 }
+
