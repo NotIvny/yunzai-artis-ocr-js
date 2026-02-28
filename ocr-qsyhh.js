@@ -129,7 +129,6 @@ let matchMsg = async (msg, imgUrls = []) => {
   let ret = {}
   let change = {}
   let char = Character.get(lodash.trim(regRet[2]).replace(/\d{9,10}/g, ''), game)
-  if (char.isTraveler) this.isTraveler = true
   game = char.isSr ? 'sr' : 'gs'
   if (!char) return false
   const isGs = game === 'gs'
@@ -288,7 +287,7 @@ let matchMsg = async (msg, imgUrls = []) => {
     }
     txt = lodash.trim(txt)
     if (txt) {
-      if (this.isTraveler) txt = txt.replace(/元素/, '主')
+      if (char.isTraveler) txt = txt.replace(/元素/, '主')
       let chars = Character.get(txt, game)
       if (chars) {
         char.char = chars.id
@@ -415,4 +414,5 @@ ProfileDetail.detail = async (e) => {
     return profileArtis(e)
   }
   return true
+
 }
