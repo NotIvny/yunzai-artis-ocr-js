@@ -22,9 +22,6 @@
 
 API使用PaddleOCR-v5进行OCR识别，单图平均处理时间为0.5-3s，并发不影响处理时间。
 
-<img width="830" height="665" alt="image" src="https://github.com/user-attachments/assets/b9487d7a-1db1-4135-9bcd-b04bed8472cd" />
-
-
 以下为命令使用方式：
 | | | | | | 
 |:---:|:---:|:---:|:---:|:---:|
@@ -33,6 +30,7 @@ API使用PaddleOCR-v5进行OCR识别，单图平均处理时间为0.5-3s，并�
 ## 其他
 
 本JS为 [ark-plugin](https://github.com/NotIvny/ark-plugin/tree/ocr-beta) 分离出来的功能，如需查看替换后伤害变化、角色总排名等功能，欢迎下载完整插件体验。
+
 
 
 
