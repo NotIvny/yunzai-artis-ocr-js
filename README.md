@@ -31,7 +31,7 @@
 
 默认圣遗物5星且满级，如果圣遗物属性不对会强制匹配一个最近的。
 
-API使用PaddleOCR-v5进行OCR识别，单图平均处理时间为0.5-3s，并发不影响处理时间。
+API使用PaddleOCR-v5 + DBSCAN + 多种校正算法实现精确识别，单图平均处理时间为0.5-3s，并发不影响处理时间。
 
 以下为命令使用方式：
 | | | | | | 
@@ -40,7 +40,8 @@ API使用PaddleOCR-v5进行OCR识别，单图平均处理时间为0.5-3s，并�
 
 ## 其他
 
-本JS为 [ark-plugin](https://github.com/NotIvny/ark-plugin/tree/ocr-beta) 分离出来的功能，如需查看替换后伤害变化、角色总排名等功能，欢迎下载完整插件体验。
+本JS为 [ark-plugin](https://github.com/NotIvny/ark-plugin/tree/v2.0.0-rc.1) 分离出来的功能，如需查看替换后伤害变化、角色总排名等功能，欢迎下载完整插件体验。
+
 
 
 
